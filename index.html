@@ -113,20 +113,52 @@
       color: #888;
       font-weight: 300;
     }
+    nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    }
+
+    nav ul li {
+    margin: 0 15px;
+    }
+
+    nav ul li a {
+    color: #00d4ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+    color: #6e00ff;
+    }
+
   </style>
 </head>
 <body>
   <header>
     <h1>AMENGERS</h1>
-    <p>The Meme Coin Multiverse Begins!</p>
+    <p>This coin is the coin.</p>
     <img src="images/amengersLogo.jpg" alt="Amengers Logo" width="200" />
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#join">Join the Amengers</a></li>
+      </ul>
+    </nav>
+
   </header>
 
-  <section>
+  <section id="about">
     <h2>About Amengers</h2>
     <p>
       $AMG TOKEN !!!
-      
+      <section id="join" class="socials">
+        <h2>Join the Amengers</h2>
+        ...
     </p>
   </section>
 
@@ -134,7 +166,7 @@
     <h2>Join the Amengers</h2>
     <p>
       <a href="https://x.com/AmengersA14713" target="_blank">Twitter</a>
-      <a href="#" target="_blank">Telegram</a>
+      <a href="#" target="_blank">Instagram</a>
     </p>
     <a href="#" class="button">Connect Wallet</a>
   </section>
