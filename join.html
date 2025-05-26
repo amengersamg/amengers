@@ -2,98 +2,118 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Join the Amengers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join Amengers</title>
   <style>
     body {
-      margin: 0;
+      background-color: #000000; /* Tam siyah arka plan */
+      color: #f0e6d2; /* Açık ten rengi */
       font-family: 'Copperplate', sans-serif;
-      background-color: #FAD7B5; /* açık ten rengi arka plan */
-      color: #6B4226; /* koyu kahverengi yazı */
-      padding: 40px 20px;
-      text-align: center;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      position: relative;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('ersan-kuneri.jpg');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.03; /* Çok hafif görünürlük */
+      filter: blur(10px);
+      z-index: -1;
     }
     header {
-      margin-bottom: 40px;
+      background-color: rgba(100, 100, 100, 0.4);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #222;
     }
-    header img {
-      width: 180px;
-      border-radius: 15px;
-      box-shadow: 0 0 20px #F2C94Ccc; /* sarı parlama */
-      transition: transform 0.3s ease;
-    }
-    header img:hover {
-      transform: scale(1.1);
-      box-shadow: 0 0 30px #D32F2Fcc; /* kırmızı parlama */
-    }
-    h1 {
-      color: #D32F2F; /* kırmızı başlık */
-      margin: 20px 0 30px 0;
+    header h1 {
+      margin: 0;
       font-size: 2.8rem;
-      text-shadow: 0 0 10px #F2C94Caa; /* sarı gölge */
-    }
-    .social-links {
-      margin-bottom: 50px;
-    }
-    .social-links a {
-      display: inline-block;
-      background-color: #F2C94C; /* sarı buton */
-      color: #6B4226; /* koyu kahverengi yazı */
+      color: #f4c25d; /* Sarı */
+      text-shadow: 2px 2px #5a2b00; /* Kahverengimsi gölge */
       font-weight: bold;
-      padding: 14px 30px;
-      margin: 0 15px;
-      border-radius: 12px;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+      background-color: rgba(40, 30, 20, 0.7); /* Koyu kahverengi yarı saydam */
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(180, 120, 30, 0.6);
+      margin-bottom: 30px;
+      font-weight: 300;
+    }
+    h2 {
+      color: #d97c1e; /* Koyu sarı/kahverengi */
+      font-size: 2rem;
+      border-bottom: 2px solid #d97c1e;
+      padding-bottom: 5px;
+      font-weight: bold;
+    }
+    .socials a {
+      color: #d97c1e; /* Sarı ton */
+      margin: 0 10px;
       text-decoration: none;
-      box-shadow: 0 0 20px #F2C94Cbb;
+      
       font-size: 1.2rem;
-      transition: background-color 0.3s ease, transform 0.3s ease;
+      font-weight: 300;
+      transition: color 0.3s;
     }
-    .social-links a:hover {
-      background-color: #D32F2F; /* kırmızı hover */
-      color: white;
-      transform: scale(1.1);
-      box-shadow: 0 0 30px #D32F2Fcc;
+    .socials a:hover {
+      color: #f4c25d; /* Hover sarı */
+      text-decoration: underline;
     }
-    .connect-wallet {
+    .button {
       display: inline-block;
-      margin-top: 30px;
-      padding: 16px 36px;
-      background-color: #D32F2F;
-      color: #FAD7B5;
+      padding: 12px 24px;
+      background: #d97c1e; /* Düğme rengi */
+      color: #000;
       font-weight: bold;
-      font-size: 1.3rem;
-      border-radius: 14px;
+
       text-decoration: none;
-      box-shadow: 0 0 25px #D32F2Fcc;
-      transition: background-color 0.3s ease, transform 0.3s ease;
+      border-radius: 8px;
+      margin-top: 20px;
+      transition: background 0.3s;
     }
-    .connect-wallet:hover {
-      background-color: #6B4226;
-      color: #F2C94C;
-      transform: scale(1.1);
-      box-shadow: 0 0 35px #6B4226cc;
+    .button:hover {
+      background: #f4c25d;
+      color: #000;
     }
     footer {
-      margin-top: 60px;
+      text-align: center;
+      padding: 20px;
+      background: #111;
       font-size: 0.9rem;
-      color: #6B4226cc;
+      color: #888;
+      font-weight: 300;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="images/amengersLogo.png" alt="Amengers Logo" />
+
     <h1>Join the Amengers</h1>
 
   </header>
-
-  <div class="social-links">
-    <a href="https://x.com/AmengersA14713" target="_blank" rel="noopener noreferrer">Twitter</a>
-    <a href="https://instagram.com/your_instagram" target="_blank" rel="noopener noreferrer">Instagram</a>
-  </div>
-
-  <a href="#" class="connect-wallet">Connect Wallet</a>
+  <section class="socials">
+    <h2>Join the Amengers</h2>
+    <p>
+      <a href="https://x.com/AmengersA14713" target="_blank" rel="noopener noreferrer">Twitter</a>
+      <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+    </p>
+    <a href="#" class="button">Connect Wallet</a>
+  </section>
 
   <footer>
     &copy; 2025 Amengers. All rights reserved.
