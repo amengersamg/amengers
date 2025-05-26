@@ -27,17 +27,16 @@
     <p class="subtitle">This coin is this coin.</p>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="section">
-    <h2>About</h2>
-    <p>Write your meme coin story here. This section explains what Amengers is all about. 🚀</p>
-  </section>
+  <section id="about" class="animate-on-scroll">
+  <h2>About</h2>
+  <p>Amengers is a meme coin that...</p>
+</section>
 
-  <!-- Buy Section -->
-  <section id="buy" class="section">
-    <h2>Buy $AMG</h2>
-    <a class="wallet-button" href="#">Buy $AMG</a>
-  </section>
+<section id="buy" class="animate-on-scroll">
+  <h2>Buy</h2>
+  <p>You can buy $AMG on...</p>
+</section>
+
 
   <!-- Socials Section -->
   <section id="socials" class="section">
@@ -59,6 +58,19 @@
   <footer>
     <p>&copy; 2025 Amengers ($AMG) Meme Coin</p>
   </footer>
+
+  <!-- index.html'in en altına (</body>’den hemen önce) -->
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  });
+
+  document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+</script>
 </body>
 
 </html>
