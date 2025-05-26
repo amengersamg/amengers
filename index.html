@@ -2,33 +2,125 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Amengers - Meme Coin</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    @font-face {
+      font-family: 'Copperplate';
+      src: local('Copperplate Gothic Bold'), local('CopperplateGothic-Bold');
+      font-weight: bold;
+    }
+    body {
+      margin: 0;
+      font-family: 'Copperplate', sans-serif;
+      background-color: #0c0c0c;
+      color: #f0f0f0;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    header {
+      margin-bottom: 40px;
+    }
+    header img {
+      width: 200px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px #00d4ffcc;
+      transition: transform 0.3s ease;
+    }
+    header img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 30px #00ffffcc;
+    }
+    h1 {
+      font-size: 3rem;
+      color: #00d4ff;
+      margin: 20px 0 10px 0;
+      text-shadow: 0 0 10px #00d4ffaa;
+    }
+    p.subtitle {
+      font-size: 1.4rem;
+      font-weight: 300;
+      color: #a0f0ffcc;
+      margin-bottom: 40px;
+      text-shadow: 0 0 5px #00d4ff88;
+    }
+    .content-box {
+      background: rgba(0, 212, 255, 0.1);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px #00d4ff66;
+      max-width: 700px;
+      margin: 0 auto 50px auto;
+      font-weight: 300;
+      font-size: 1.1rem;
+      line-height: 1.5;
+      color: #e0f7ff;
+      text-align: left;
+    }
+    nav {
+      margin-bottom: 40px;
+    }
+    nav a {
+      color: #00d4ff;
+      font-weight: bold;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1.2rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #6e00ff;
+    }
+    .button {
+      display: inline-block;
+      background-color: #00d4ff;
+      color: #000;
+      font-weight: bold;
+      padding: 14px 28px;
+      border-radius: 12px;
+      text-decoration: none;
+      box-shadow: 0 0 20px #00d4ffbb;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      font-size: 1.2rem;
+    }
+    .button:hover {
+      background-color: #6e00ff;
+      color: white;
+      transform: scale(1.05);
+      box-shadow: 0 0 30px #6e00ffcc;
+    }
+    footer {
+      color: #888;
+      margin-top: 60px;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>AMENGERS</h1>
-    <p>This coin is the coin.</p>
-    <img src="images/amengersLogo.jpg" alt="Amengers Logo" />
 
-    <nav>
-      <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="join.html">Join the Amengers</a></li>
-      </ul>
-    </nav>
-  </header>
+<header>
+  <img src="images/amengersLogo.jpg" alt="Amengers Logo" />
+  <h1>Welcome to Amengers</h1>
+  <p class="subtitle">The most powerful meme coin in the crypto universe</p>
+  <nav>
+    <a href="about.html">About</a>
+    <a href="join.html">Join the Amengers</a>
+  </nav>
+</header>
 
-  <main>
-    <section>
-      <h2>Welcome to the Amengers Meme Coin!</h2>
-      <p>$AMG - The Meme Coin Multiverse Begins!</p>
-    </section>
-  </main>
+<section class="content-box">
+  <h2>About $AMG</h2>
+  <p>
+    $AMG TOKEN !!! The meme coin that combines power, fun, and community spirit.
+    Join us and be part of an unstoppable crypto movement. Our mission is to
+    create value and laughter while changing the crypto game forever.
+  </p>
+  <a href="join.html" class="button">Join the Amengers Now</a>
+</section>
 
-  <footer>
-    &copy; 2025 Amengers. All rights reserved.
-  </footer>
+<footer>
+  &copy; 2025 Amengers. All rights reserved.
+</footer>
+
 </body>
 </html>
