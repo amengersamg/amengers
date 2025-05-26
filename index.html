@@ -1,151 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Amengers - $AMG</title>
-  <style>
-    @font-face {
-      font-family: 'Copperplate';
-      src: local('Copperplate Gothic Bold'), local('CopperplateGothic-Bold');
-      font-weight: bold;
-    }
-    body {
-      margin: 0;
-      font-family: 'Copperplate', sans-serif;
-      font-weight: 300;
-      background-color: #000000; /* Tam siyah */
-      color: #f0f0f0;
-      position: relative;
-      overflow-x: hidden;
-    }
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-image: url('ersan-kuneri.jpg'); /* Arka plan resmi */
-      background-size: cover;
-      background-position: center;
-      opacity: 0.03; /* Çok hafif görünür */
-      filter: blur(10px);
-      z-index: -1;
-    }
-    header {
-      background-color: rgba(100, 100, 100, 0.4);
-      backdrop-filter: blur(6px);
-      -webkit-backdrop-filter: blur(6px);
-      padding: 20px;
-      text-align: center;
-      border-bottom: 2px solid #222;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.8rem;
-      color: #f4c25d; /* Logo renklerine uyumlu sarı ton */
-      text-shadow: 2px 2px #5a2b00; /* Kahverengimsi gölge */
-      font-weight: bold;
-    }
-    header p {
-      margin-top: 10px;
-      font-size: 1.2rem;
-      color: #f7dca0; /* Açık sarı */
-      font-weight: 300;
-    }
-    header img {
-      max-width: 200px;
-      margin-top: 15px;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(180, 120, 30, 0.7); /* Sarımsı glow */
-    }
-    nav ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      margin-top: 20px;
-    }
-    nav ul li {
-      margin: 0 15px;
-    }
-    nav ul li a {
-      color: #f4c25d; /* Sarı ton */
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-    nav ul li a:hover {
-      color: #d97c1e; /* Koyu sarı/kahverengi ton */
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: auto;
-      background-color: rgba(40, 30, 20, 0.7); /* Koyu kahverengi yarı saydam */
-      border-radius: 16px;
-      box-shadow: 0 0 20px rgba(180, 120, 30, 0.6); /* Sarı kahverengi glow */
-      margin-bottom: 30px;
-      font-weight: 300;
-      color: #f0e6d2; /* Açık ten rengi */
-    }
-    h2 {
-      color: #d97c1e; /* Koyu sarı/kahverengi */
-      font-size: 2rem;
-      border-bottom: 2px solid #d97c1e;
-      padding-bottom: 5px;
-      font-weight: bold;
-      
-    }
-    .button {
-      display: inline-block;
-      padding: 12px 24px;
-      background: #d97c1e; /* Düğme rengi */
-      color: #000;
-      font-weight: bold;
-
-      text-decoration: none;
-      border-radius: 8px;
-      margin-top: 20px;
-      transition: background 0.3s;
-    }
-    .button:hover {
-      background: #f4c25d; /* Hover sarı */
-      color: #000;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #111;
-      font-size: 0.9rem;
-      color: #888;
-      font-weight: 300;
-    }
-  </style>
+  <title>Amengers - ($AMG)</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <header>
-    <h1>AMENGERS</h1>
-    <p>This coin is the coin.</p>
-    <img src="images/amengersLogo.png" alt="Amengers Logo" />
-    <nav>
-      <ul>
-        <li><a href="about.html" target="_blank" rel="noopener noreferrer">About</a></li>
-        <li><a href="join.html" target="_blank" rel="noopener noreferrer">Join the Amengers</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <section id="about">
-    <h2>About Amengers</h2>
-    <p>
-      $AMG TOKEN !!!
-    </p>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#buy">Buy</a></li>
+      <li><a href="#socials">Socials</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="section">
+    <img src="assets/amengersLogo.png" alt="Amengers Logo" class="logo" />
+    <h1>Amengers - ($AMG)</h1>
+    <p class="subtitle">This coin is this coin.</p>
   </section>
 
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About</h2>
+    <p>Write your meme coin story here. This section explains what Amengers is all about. 🚀</p>
+  </section>
+
+  <!-- Buy Section -->
+  <section id="buy" class="section">
+    <h2>Buy $AMG</h2>
+    <a class="wallet-button" href="#">Buy $AMG</a>
+  </section>
+
+  <!-- Socials Section -->
+  <section id="socials" class="section">
+    <h2>Join the Community</h2>
+    <div class="social-links">
+      <a href="#" class="social x">X</a>
+      <a href="#" class="social instagram">Instagram</a>
+      <a href="#" class="social telegram">Telegram</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    &copy; 2025 Amengers. All rights reserved.
+    <p>&copy; 2025 Amengers ($AMG) Meme Coin</p>
   </footer>
 </body>
+
 </html>
