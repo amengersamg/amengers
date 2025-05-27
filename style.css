@@ -99,7 +99,7 @@ footer {
 }
 
 .social.twitter:hover {
-  background: #0d8ddb;
+  transform: #0d8ddb;
   opacity: scale(1.05);
 }
 
