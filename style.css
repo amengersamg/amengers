@@ -100,7 +100,7 @@ footer {
 
 .social.twitter:hover {
   background: #0d8ddb;
-  transform: scale(1.05);
+  opacity: scale(1.05);
 }
 
 .social.instagram {
